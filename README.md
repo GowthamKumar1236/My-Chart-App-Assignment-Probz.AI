@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# React Charting Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React.js application that displays a chart using the Recharts library. The chart supports timeframe breakdown, zooming, and interactive click events. The chart data is provided in JSON format.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Timeframe Breakdown**: View the chart data by daily, weekly, or monthly intervals.
+- **Interactive Click Events**: Click on data points to view more details.
+- **Export as PNG**: Export the chart as a PNG image.
 
-### `npm start`
+## Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/my-chart-app.git
+    cd my-chart-app
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-### `npm test`
+3. **Run the Application**:
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Open in Browser**:
+    Open your browser and go to `http://localhost:3000`
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **src/components/Chart.js**: The chart component using Recharts.
+- **src/components/TimeframeSelector.js**: The component to switch between different timeframes.
+- **src/data/data.json**: The JSON file containing the chart data.
+- **src/App.js**: The main App component combining the chart and the timeframe selector.
+- **src/App.css**: Basic styling for the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Select Timeframe**: Use the buttons to switch between daily, weekly, and monthly views.
+- **Export Chart**: Click the "Export as PNG" button to save the chart as an image.
 
-### `npm run eject`
+## Example JSON Data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example data used in the application is stored in `src/data/data.json`:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```json
+[
+  { "timestamp": "2023-01-01T00:00:00Z", "value": 10 },
+  { "timestamp": "2023-01-02T00:00:00Z", "value": 12 },
+  { "timestamp": "2023-01-03T00:00:00Z", "value": 5 },
+.....................
+]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Deployment
+To deploy the application, i have used render platform and followed these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1.Build the Application:
+npm run build
 
-## Learn More
+2.Remove the text /build in the .gitignore file
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3.Then push the updated code into the GitHub repository.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4Then we have successfully deployed our project on render.
