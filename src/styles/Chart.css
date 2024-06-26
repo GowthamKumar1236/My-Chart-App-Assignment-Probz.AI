@@ -1,0 +1,24 @@
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+
+}
+
+.chart-button {
+  margin-bottom: 20px;
+  background-color:royalblue;
+  cursor: pointer;
+  outline: none;
+  margin-top: 30px;
+font-family: "Roboto";
+color: #ffffff;
+border-width: 0px;
+border-color: none;
+height: 30px;
+border-radius: 5px;
+}

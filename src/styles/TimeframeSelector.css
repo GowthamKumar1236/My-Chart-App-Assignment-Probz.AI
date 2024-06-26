@@ -1,0 +1,24 @@
+.timeframe-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .timeframe-button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .timeframe-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .timeframe-button:active {
+    background-color: #003f7f;
+  }
+  
