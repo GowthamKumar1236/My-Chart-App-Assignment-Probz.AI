@@ -46,15 +46,14 @@ This is a React.js application that displays a chart using the Recharts library.
 
 Example data used in the application is stored in `src/data/data.json`:
 
-```json
+json:
 [
   { "timestamp": "2023-01-01T00:00:00Z", "value": 10 },
   { "timestamp": "2023-01-02T00:00:00Z", "value": 12 },
-  { "timestamp": "2023-01-03T00:00:00Z", "value": 5 },
-.....................
+  { "timestamp": "2023-01-03T00:00:00Z", "value": 5 }
 ]
 
-Deployment
+**Deployment**
 To deploy the application, i have used render platform and followed these steps:
 
 1.Build the Application:
