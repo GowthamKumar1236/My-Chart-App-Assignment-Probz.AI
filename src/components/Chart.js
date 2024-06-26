@@ -51,7 +51,6 @@ const Chart = ({ timeframe }) => {
         </ResponsiveContainer>
       </div>
       <button className="chart-button" onClick={handleExport}>Export as PNG</button>
-
     </div>
   );
 };
