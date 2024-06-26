@@ -75,10 +75,10 @@ To deploy the application, i have used render platform and followed these steps:
 2. **Deploy the `build` Directory**:
     Deploy the contents of the `build` directory to your web server or hosting platform.
 
-3.Remove the text /build in the .gitignore file
+3. Remove the text /build in the .gitignore file
 
-4.Then push the updated code into the GitHub repository.
+4. Then push the updated code into the GitHub repository.
 
-5.Then we have successfully deployed our project on render.
+5. Then we have successfully deployed our project on render.
 
 
